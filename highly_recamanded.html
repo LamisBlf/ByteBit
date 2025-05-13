@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>highly recamanded</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        header {
+            display: flex;
+            /*??*/
+            justify-content: space-between;
+            /*to let space between to logo and nav ithems*/
+            align-items: center;
+            /*align items in the center line of the container(header)*/
+            padding: 15px 30px;
+            background-color: #F5F5F7;
+        }
+        
+        .logo {
+            font-size: 28px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #0066CC;
+            text-decoration: none;
+            /*to remove the underline*/
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            /*to display them in the same line?????????*/
+            gap: 25px;
+            /*to keep space btwn the nav items*/
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            /*to remove points of the list*/
+            color: #333;
+            font-weight: 500;
+            padding-bottom: 5px;
+            border-bottom: 2px solid transparent;
+            /*to add the line(transprent ) in the bottom of the nav item*/
+            transition: all 0.3s ease;
+            /*to let the transition more natural?????????*/
+        }
+        
+        nav ul li a:hover {
+            /*while putting the mouse on the nav item*/
+            border-bottom-color: #0071E3;
+            color: #0071E3;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar-->
+    <header>
+        <a href="index.html" class="logo">Bytebit</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <!--first section-->
+    <section class="hiRec">
+        <h2 class="ttlHiRec">Highly recamanded</h2>
+        <div class="products">
+            <div class="product-card">
+                <img src="images/samPho.jpg" alt="Product 1">
+                <div class="card-info">
+                    <p class="product-name">Product</p>
+                    <p class="product-price">Price</p>
+                </div>
+                <a href="#">
+                    <!--to make a botton as a link-->
+                    <button class="cart-btn">give it a try</button>
+                </a>
+
+            </div>
+
+            <div class="product-card">
+                <img src="images/img1.jpg" alt="Product 2">
+                <div class="card-info">
+                    <p class="product-name">Product</p>
+                    <p class="product-price">Price</p>
+                </div>
+                <a href="#">
+                    <button class="cart-btn">give it a try</button>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <img src="images/img600.jpg" alt="Product 3">
+                <div class="card-info">
+                    <p class="product-name">Product</p>
+                    <p class="product-price">Price</p>
+                </div>
+                <a href="#">
+                    <button class="cart-btn">give it a try</button>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <img src="images/img4.jpg" alt="Product 4">
+                <div class="card-info">
+                    <p class="product-name">Product</p>
+                    <p class="product-price">Price</p>
+                </div>
+                <a href="#">
+                    <button class="cart-btn">give it a try</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--second section-->
+    <section class="hiRec">
+        <div class="products">
+            <div class="product-card">
+                <img src="images/samPho.jpg" alt="Product 1">
+                <div class="card-info">
+                    <p class="product-name">Product</p>
+                    <p class="product-price">Price</p>
+                </div>
+                <a href="#">
+                    <button class="cart-btn">give it a try</button>
+                </a>
+
+            </div>
+
+            <div class="product-card">
+                <img src="images/img1.jpg" alt="Product 2">
+                <div class="card-info">
+                    <p class="product-name">Product</p>
+                    <p class="product-price">Price</p>
+                </div>
+                <a href="#">
+                    <button class="cart-btn">give it a try</button>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <img src="images/img600.jpg" alt="Product 3">
+                <div class="card-info">
+                    <p class="product-name">Product</p>
+                    <p class="product-price">Price</p>
+                </div>
+                <a href="#">
+                    <button class="cart-btn">give it a try</button>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <img src="images/img4.jpg" alt="Product 4">
+                <div class="card-info">
+                    <p class="product-name">Product</p>
+                    <p class="product-price">Price</p>
+                </div>
+                <a href="#">
+                    <button class="cart-btn">give it a try</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--third class-->
+    <section class="hiRec">
+        <div class="products">
+            <div class="product-card">
+                <img src="images/samPho.jpg" alt="Product 1">
+                <div class="card-info">
+                    <p class="product-name">Product</p>
+                    <p class="product-price">Price</p>
+                </div>
+                <a href="#">
+                    <button class="cart-btn">give it a try</button>
+                </a>
+
+            </div>
+
+            <div class="product-card">
+                <img src="images/img1.jpg" alt="Product 2">
+                <div class="card-info">
+                    <p class="product-name">Product</p>
+                    <p class="product-price">Price</p>
+                </div>
+                <a href="#">
+                    <button class="cart-btn">give it a try</button>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <img src="images/img600.jpg" alt="Product 3">
+                <div class="card-info">
+                    <p class="product-name">Product</p>
+                    <p class="product-price">Price</p>
+                </div>
+                <a href="#">
+                    <button class="cart-btn">give it a try</button>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <img src="images/img4.jpg" alt="Product 4">
+                <div class="card-info">
+                    <p class="product-name">Product</p>
+                    <p class="product-price">Price</p>
+                </div>
+                <a href="#">
+                    <button class="cart-btn">give it a try</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h3>Follow us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Privacy Police</h3>
+                <p>We care about your privacy. All data is protected according to the latest security and encryption standards</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Customer Care</h3>
+                <p>We are available 24/7 to assist you with any inquiry or issue you encounter while using our services</p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; All rights reserved</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

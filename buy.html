@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <style>
+        header {
+            display: flex;
+            /*??*/
+            justify-content: space-between;
+            /*to let space between to logo and nav ithems*/
+            align-items: center;
+            /*align items in the center line of the container(header)*/
+            padding: 15px 30px;
+            background-color: #F5F5F7;
+        }
+        
+        .logo {
+            font-size: 28px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #0066CC;
+            text-decoration: none;
+            /*to remove the underline*/
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            /*to display them in the same line?????????*/
+            gap: 25px;
+            /*to keep space btwn the nav items*/
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            /*to remove points of the list*/
+            color: #333;
+            font-weight: 500;
+            padding-bottom: 5px;
+            border-bottom: 2px solid transparent;
+            /*to add the line(transprent ) in the bottom of the nav item*/
+            transition: all 0.3s ease;
+            /*to let the transition more natural?????????*/
+        }
+        
+        nav ul li a:hover {
+            /*while putting the mouse on the nav item*/
+            border-bottom-color: #0071E3;
+            color: #0071E3;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar-->
+    <header>
+        <a href="index.html" class="logo">Bytebit</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="checkout-container">
+        <h2>Payment Details</h2>
+        <div class="checkout-content">
+            <form class="payment-form" method="post">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="address">Shipping Address</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="cardnumber">Card Number</label>
+                <input type="text" id="cardnumber" name="cardnumber" placeholder="1111 2222 3333 4444" required>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="exp">Expiry Date</label>
+                        <input type="text" id="exp" name="exp" placeholder="MM/YY" required>
+                    </div>
+                    <div class="col">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                    </div>
+                </div>
+
+                <button type="submit">Place Order</button>
+            </form>
+
+            <div class="order-summary">
+                <h3>Order Summary</h3>
+                <ul>
+                    <li><span>Laptop</span><span>150,000.00 DA</span></li>
+                    <li><span>Headphones</span><span>50,000.00 DA</span></li>
+                    <li class="total"><span>Total</span><span>200,000.00 DA</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h3>Follow us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Privacy Police</h3>
+                <p>We care about your privacy. All data is protected according to the latest security and encryption standards</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Customer Care</h3>
+                <p>We are available 24/7 to assist you with any inquiry or issue you encounter while using our services</p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; All rights reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>

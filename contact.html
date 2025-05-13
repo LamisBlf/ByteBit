@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+        header {
+            display: flex;
+            /*??*/
+            justify-content: space-between;
+            /*to let space between to logo and nav ithems*/
+            align-items: center;
+            /*align items in the center line of the container(header)*/
+            padding: 15px 30px;
+            background-color: #F5F5F7;
+        }
+        
+        .logo {
+            font-size: 28px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #0066CC;
+            text-decoration: none;
+            /*to remove the underline*/
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            /*to display them in the same line?????????*/
+            gap: 25px;
+            /*to keep space btwn the nav items*/
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            /*to remove points of the list*/
+            color: #333;
+            font-weight: 500;
+            padding-bottom: 5px;
+            border-bottom: 2px solid transparent;
+            /*to add the line(transprent ) in the bottom of the nav item*/
+            transition: all 0.3s ease;
+            /*to let the transition more natural?????????*/
+        }
+        
+        nav ul li a:hover {
+            /*while putting the mouse on the nav item*/
+            border-bottom-color: #0071E3;
+            color: #0071E3;
+        }
+        
+        #contact {
+            /*to define the current page*/
+            color: #0071E3;
+            border-bottom-color: #0071E3;
+        }
+        
+        #contact:hover {
+            /*to keep the line under the nav item of the current page*/
+            color: #0071E3;
+            border-bottom-color: #0071E3;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">Bytebit</a>
+        <nav>
+            <ul>
+                <li><a id="home" href="index.html">Home</a></li>
+                <li><a id="cart" href="cart.html">Cart</a></li>
+                <li><a id="login" href="login.html">Login</a></li>
+                <li><a id="contact" href="contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <!--small definition-->
+    <div>
+        <h1 class="contactTitle">Get in touch</h1>
+        <p class="smallDef"> Have a question about our products? Need help with an order? We're here to assist! Reach out to us, and we'll <br> make sure you have the best shopping experience possible !
+        </p>
+    </div>
+    <!--contact section-->
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-image">
+                <img src="images/contact.png" alt="صورة خدمة العملاء" />
+            </div>
+            <div class="contact-methods">
+                <div class="contact-item">
+                    <i class="fas fa-fax"></i>
+                    <span class="contact-label">Fax</span>
+                    <span class="contact-info">1234567890</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span class="contact-label">Email</span>
+                    <span class="contact-info">info@example.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <span class="contact-label">Whatsapp</span>
+                    <span class="contact-info">+966501234567</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="contact-label">address</span>
+                    <span class="contact-info"><address>Kouba, Algiers, Algeria</address></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h3>Follow us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Privacy Police</h3>
+                <p>We care about your privacy. All data is protected according to the latest security and encryption standards</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Customer Care</h3>
+                <p>We are available 24/7 to assist you with any inquiry or issue you encounter while using our services</p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; All rights reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>
